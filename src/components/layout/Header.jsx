@@ -11,7 +11,7 @@
                 className="text-lg font-semibold tracking-tight text-neutral-900"
                 aria-label="Go to home page"
             >
-                Portfolio Iki
+                Itzel Moreno Villaseñor
             </a>
 
             <Navbar />

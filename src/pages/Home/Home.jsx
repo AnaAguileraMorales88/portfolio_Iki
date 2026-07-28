@@ -1,17 +1,19 @@
-import Button from '../../components/ui/Button';
-import Container from '../../components/common/Container';
-import DefaultLayout from '../../layouts/DefaultLayout';
+    import DefaultLayout from '../../layouts/DefaultLayout';
+    import Container from '../../components/common/Container';
 
-function Home() {
-  return (
-    <DefaultLayout>
-      <Container>
-        <h1>Home</h1>
+    import Hero from '../../components/sections/Hero';
+    import Services from '../../components/sections/Services';
 
-        <Button>Let's Talk</Button>
-      </Container>
-    </DefaultLayout>
-  );
-}
+    function Home() {
+    return (
+        <DefaultLayout>
+        <Container>
+            <Hero />
 
-export default Home;
+            <Services />
+        </Container>
+        </DefaultLayout>
+    );
+    }
+
+    export default Home;
