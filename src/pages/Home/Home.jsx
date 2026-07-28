@@ -1,13 +1,17 @@
-    import Container from '../../components/common/Container';
+import Button from '../../components/ui/Button';
+import Container from '../../components/common/Container';
+import DefaultLayout from '../../layouts/DefaultLayout';
 
-    function Home() {
-    return (
-        <main>
-        <Container>
-            <h1>Portfolio Iki</h1>
-        </Container>
-        </main>
-    );
-    }
+function Home() {
+  return (
+    <DefaultLayout>
+      <Container>
+        <h1>Home</h1>
 
-    export default Home;
+        <Button>Let's Talk</Button>
+      </Container>
+    </DefaultLayout>
+  );
+}
+
+export default Home;

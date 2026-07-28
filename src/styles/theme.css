@@ -1,0 +1,18 @@
+    :root {
+    /* Colors */
+    --color-background: #ffffff;
+    --color-surface: #f8f8f8;
+    --color-text: #111111;
+    --color-text-muted: #6b7280;
+    --color-border: #e5e7eb;
+    --color-accent: #111111;
+
+    /* Width */
+    --container-width: 80rem;
+
+    /* Spacing */
+    --section-spacing: 6rem;
+
+    /* Radius */
+    --radius-full: 9999px;
+    }
