@@ -1,10 +1,11 @@
     import { NavLink } from 'react-router-dom';
 
-    function NavItem({ href, label }) {
+    function NavItem({ href, label, onNavigate }) {
     return (
         <li>
         <NavLink
             to={href}
+            onClick={onNavigate}
             className={({ isActive }) =>
             `text-sm font-medium transition-colors duration-200 ${
                 isActive

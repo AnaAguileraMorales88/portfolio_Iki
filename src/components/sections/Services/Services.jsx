@@ -1,3 +1,4 @@
+    import Container from '../../common/Container';
     import Section from '../../common/Section';
     import ServiceCard from './ServiceCard';
 
@@ -22,21 +23,27 @@
     function Services() {
     return (
         <Section>
-        <header>
-            <h2 className="text-3xl font-semibold tracking-tight text-neutral-900 md:text-4xl">
-            What I do
-            </h2>
-        </header>
+        <Container>
+            <header className="max-w-2xl">
+            <p className="text-sm font-medium uppercase tracking-[0.2em] text-neutral-500">
+                Expertise
+            </p>
 
-        <section className="mt-12 grid gap-12 md:grid-cols-3">
+            <h2 className="mt-4 text-3xl font-semibold tracking-tight text-neutral-900 md:text-4xl">
+                What I do
+            </h2>
+            </header>
+
+            <section className="mt-14 grid gap-12 md:grid-cols-3 md:gap-8 lg:mt-16">
             {SERVICES.map((service) => (
-            <ServiceCard
+                <ServiceCard
                 key={service.title}
                 title={service.title}
                 description={service.description}
-            />
+                />
             ))}
-        </section>
+            </section>
+        </Container>
         </Section>
     );
     }

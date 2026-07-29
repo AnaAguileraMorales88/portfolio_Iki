@@ -1,29 +1,21 @@
-    function Button({ children, type = 'button', onClick }) {
+    import { Link } from 'react-router-dom';
+
+    function Button({ children, to }) {
+    if (to) {
+        return (
+        <Link
+            to={to}
+            className="inline-flex min-h-11 items-center rounded-full bg-iki-green px-6 py-3 text-sm font-semibold text-iki-cream transition-transform duration-200 hover:-translate-y-1 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-iki-green focus-visible:ring-offset-4"
+        >
+            {children}
+        </Link>
+        );
+    }
+
     return (
         <button
-        type={type}
-        onClick={onClick}
-        className="
-            inline-flex
-            items-center
-            justify-center
-            rounded-full
-            border
-            border-neutral-900
-            px-6
-            py-3
-            text-sm
-            font-medium
-            text-neutral-900
-            transition-colors
-            duration-200
-            hover:bg-neutral-900
-            hover:text-white
-            focus-visible:outline-none
-            focus-visible:ring-2
-            focus-visible:ring-neutral-900
-            focus-visible:ring-offset-2
-        "
+        type="button"
+        className="inline-flex min-h-11 items-center rounded-full bg-iki-green px-6 py-3 text-sm font-semibold text-iki-cream transition-transform duration-200 hover:-translate-y-1 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-iki-green focus-visible:ring-offset-4"
         >
         {children}
         </button>

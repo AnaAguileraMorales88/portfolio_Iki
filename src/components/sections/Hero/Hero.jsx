@@ -1,10 +1,13 @@
+    import Container from '../../common/Container';
     import Section from '../../common/Section';
     import HeroContent from './HeroContent';
 
     function Hero() {
     return (
         <Section>
-        <HeroContent />
+        <Container>
+            <HeroContent />
+        </Container>
         </Section>
     );
     }
